@@ -377,8 +377,11 @@ healthcheck:
 
 2. **Port Already in Use**
    ```bash
-   # Check what's using the port
+   # Check what's using the port (Windows)
    netstat -ano | findstr :8001
+   
+   # Check what's using the port (Linux/macOS)
+   sudo netstat -tuln | grep 8001
    
    # Stop conflicting services
    docker compose down
