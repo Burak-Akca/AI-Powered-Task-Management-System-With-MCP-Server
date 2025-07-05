@@ -9,10 +9,12 @@
 ### 🎯 **Core Functionality**
 - **Smart Note Management** ✅: Create, list, and manage notes with automatic database handling
 - **Email Automation** ✅: Send emails via SMTP with Gmail integration
-Service API *(Coming Soon)*
+
+### **Service API**
+ 
 - **News Aggregation** 🔄: Fetch latest news headlines by category and country *(Coming Soon)*
 - **Reminder System** 🔄: Set time-based reminders with background processing *(Coming Soon)*
-- **Weather Intelligence** 🔄: Get detailed weather forecasts and alerts using National Weather 
+- **Weather Intelligence** 🔄: Get detailed weather forecasts and alerts using National Weather *(Coming Soon)* 
 ### 🛠️ **Technical Features**
 - **FastMCP Integration**: Model Context Protocol for seamless AI tool interaction
 - **PostgreSQL Database**: Robust data persistence with automatic connection retry
