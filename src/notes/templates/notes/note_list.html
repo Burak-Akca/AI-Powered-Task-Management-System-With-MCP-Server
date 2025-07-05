@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>My Notes</h2>
+<a href="{% url 'notes:note_create' %}" class="btn btn-primary mb-3">+ New Note</a>
+<ul class="list-group">
+    {% for note in notes %}
+        <li class="list-group-item">
+            <h5>{{ note.title }}</h5>
+            <p>{{ note.content|truncatechars:100 }}</p>
+            <a href="{% url 'notes:note_edit' note.pk %}" class="btn btn-sm btn-outline-secondary">Edit</a>
+            <a href="{% url 'notes:note_delete' note.pk %}" class="btn btn-sm btn-outline-danger">Delete</a>
+        </li>
+    {% empty %}
+        <li class="list-group-item">You don't have any notes yet.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
